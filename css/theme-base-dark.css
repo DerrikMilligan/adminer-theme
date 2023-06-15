@@ -1,0 +1,322 @@
+/* Sticky table header */
+#content table thead th,
+#content table thead td {
+  position: sticky;
+  top: 40px;
+  background-color: var(--background-color-darker);
+  z-index: 10;
+}
+
+.js span.column {
+  margin: 15px 0 0 -45px;
+  -webkit-box-shadow: 2px 2px 15px -7px rgba(255,255,255,0.75);
+  -moz-box-shadow: 2px 2px 15px -7px rgba(255,255,255,0.75);
+  box-shadow: 2px 2px 15px -7px rgba(255,255,255,0.75);
+  background-color: var(--background-color-selected);
+  border: 1px solid var(--background-color-hover);
+}
+
+.js span.column a {
+  color: var(--text-color-primary);
+  padding: 3px;
+}
+
+.js span.column a:hover {
+  color: var(--text-color-primary-hover);
+}
+
+.js .checkable .checked td, .js .checkable .checked th {
+  background: none;
+}
+
+/* Theme color stuff */
+body {
+  background-color: var(--background-color-darkest);
+}
+
+table {
+  border: 1px solid var(--background-color-highlighted);
+}
+
+a, a:visited {
+  color: var(--text-color-primary);
+}
+
+a:link:hover,a:visited:hover{
+  color: var(--text-color-primary-hover);
+}
+
+a.active + a.structure::after {
+  content: ' - [Current]';
+  font-size: 90%;
+}
+
+input[type="image"] {
+  margin-right:5px
+}
+
+.icon {
+  background-color: var(--background-color-selected);
+  border: 1px solid var(--background-color-highlighted);
+}
+
+.icon:hover {
+  background-color: var(--background-color-hover);
+}
+
+p#dbs {
+  background-color: var(--background-color-darker);
+}
+
+#menu {
+  color: var(--text-color-default);
+  background-color: var(--background-color-darker);
+  border-right: 1px solid var(--background-color-highlighted);
+}
+
+#menu h1 {
+  background-color: var(--background-color-darkest);
+  border: none;
+}
+
+#menu .links {
+  background-color: var(--background-color-darker);
+}
+
+#menu ul#tables {
+  background-color: var(--background-color-darkest);
+}
+
+#menu ul#tables li.selected-table-entry {
+  border-color: var(--text-color-primary);
+}
+
+#menu ul#logins a {
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+}
+
+#menu ul#logins a:hover {
+  background-color: var(--background-color-hover);
+}
+
+#tables a.select {
+  color: var(--text-color-primary);
+}
+
+#tables a.structure, #tables a.view {
+  color: var(--text-color-default);
+}
+
+#menu p, #logins, #tables {
+  border-bottom: none;
+}
+
+#breadcrumb {
+  background-color: var(--background-color-darker);
+}
+
+.logout {
+  background-color: var(--background-color-darker);
+}
+
+.logout input[type="submit"] {
+  color: var(--text-color-primary);
+}
+
+.logout input[type="submit"]:hover {
+  color: var(--text-color-primary-hover);
+}
+
+h2 {
+  background-color: var(--background-color-darkest);
+  color: var(--text-color-default);
+}
+
+fieldset {
+  background-color: var(--background-color-darker);
+  border: 1px solid var(--background-color-highlighted);
+}
+
+input[type="submit"] {
+  border: 1px solid var(--background-color-highlighted);
+  background: var(--background-color);
+  color: var(--text-color-primary);
+}
+
+input[type="submit"]:hover {
+  background: var(--background-color-hover);
+  color: var(--text-color-primary-hover);
+}
+
+div.footer {
+  background-color: var(--background-color-darker);
+  border: none;
+  border: 1px solid var(--background-color-highlighted);
+  padding-top: 10px;
+  z-index: 10;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.75);
+}
+
+div.footer div {
+  background: none;
+  padding: 0.5em;
+}
+
+input:not([type]),input[type="text"],input[type="email"],input[type="password"],input[type="search"],input[type="number"],textarea,pre[contenteditable="true"],select{
+  padding: 4px 5px !important;
+  background-color: var(--background-color);
+  color: var(--text-color-default);
+  border: 1px solid var(--background-color-hover);
+  font-size: 10pt;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+
+/* sql colors - Started from https://gist.github.com/robertopc/bf2edac131bbaf789343fa9ce3ceb2e4 */
+.sqlarea{
+	border: 1px solid #444 !important;
+	width: 100% !important;
+	padding: 12px 15px !important;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.jush-sql_code{
+	color: #fafafa !important;
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.jush a, .jush a:visited{
+	color: #fba;
+	font-weight: normal;
+}
+
+.jush a:hover{
+	color: #fba;
+	cursor: pointer;
+}
+
+.jush-php_quo, .jush-quo, .jush-quo_one, .jush-php_eot, .jush-apo, .jush-sql_apo, .jush-sqlite_apo, .jush-sql_quo, .jush-sql_eot{
+	color: aquamarine;
+}
+
+.jush-bac, .jush-php_bac, .jush-bra, .jush-mssql_bra, .jush-sqlite_quo{
+	color: plum;
+}
+
+.jush-num, .jush-clr{
+	color: #85E2FF;
+}
+
+code {
+	background: var(--background-color-darker);
+  border-left: 7px solid var(--background-color-hover);
+}
+
+code.jush-sql ~ a{
+	position: relative;
+	margin-left: 5px;
+	/*margin-top: 20px;
+	margin-bottom: 20px;	*/
+}
+
+#tables li:hover{
+  background: var(--background-color-hover);
+}
+
+#tables a.active+a,#tables a.active:last-child{
+  background: var(--background-color-selected);
+  color: var(--text-color-primary);
+  font-weight: bold;
+}
+
+#tables a.structure.active,#tables a.view.active{
+  background: var(--background-color-selected);
+  color: var(--text-color-primary);
+}
+#tables a.structure.active:hover,
+#tables a.view.active:hover,
+#tables a.active+a:hover,
+#tables a.active:last-child:hover {
+  background: var(--background-color-hover);
+}
+
+tr {
+  border-bottom: 1px solid var(--background-color-darkest);
+}
+
+tr td {
+  color: var(--text-color-default);
+  background-color: var(--background-color);
+}
+
+tbody tr th {
+  background-color: var(--background-color-darker);
+}
+
+tr.odd td {
+  background-color: var(--background-color-highlighted);
+}
+
+.js .checkable tr.checked td {
+  background-color: var(--background-color-selected);
+}
+
+tbody tr:hover td, tbody tr:hover th, .js .checkable tr.checked:hover td {
+  background-color: var(--background-color-hover);
+}
+
+/* Custom checkboxes - Started from this: https://codepen.io/brankocee/pen/QWwmrvM */
+input[type=checkbox] {
+  position: relative;
+	border: 2px solid var(--text-color-primary-darker);
+	border-radius: 2px;
+	background: none;
+	cursor: pointer;
+	line-height: 0;
+	/* margin: 0 .6em 0 0; */
+	outline: 0;
+	padding: 0 !important;
+	height: 15px;
+	width: 15px;
+	-webkit-appearance: none;
+  appearance: none;
+}
+
+input[type=checkbox]:hover {
+	border-color: var(--text-color-primary);
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--text-color-primary-darkest);
+  opacity: 1;
+}
+
+input[type=checkbox]:before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 2px;
+  height: 8px;
+  border: solid var(--text-color-default);
+  border-width: 0 2px 2px 0;
+  margin: -1px 0 -1xp -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked:before {
+  opacity: 1;
+}
+
+#help{
+  border: 1px solid var(--background-color-hover);
+  background: var(--background-color);
+}
+

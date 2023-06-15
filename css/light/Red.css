@@ -1,0 +1,26 @@
+
+:root {
+  /* Red Light theme */
+  /* Split up the HSL color so we can use math to ligthen/darken the colors */
+  --background-color-HS: 0, 0%;
+  --background-color-L: 90%;
+
+  --text-color-primary-HS: 344, 100%;
+  --text-color-primary-L: 56%;
+
+  --text-color-default: #000;
+
+  --background-color: hsl(var(--background-color-HS), var(--background-color-L));
+  --background-color-darkest: hsl(var(--background-color-HS), calc(var(--background-color-L) + 10%));
+  --background-color-darker: hsl(var(--background-color-HS), calc(var(--background-color-L) + 5%));
+  --background-color-highlighted: hsl(var(--background-color-HS), calc(var(--background-color-L) - 2%));
+  --background-color-selected: hsl(var(--background-color-HS), calc(var(--background-color-L) - 5%));
+  --background-color-hover: hsl(var(--background-color-HS), calc(var(--background-color-L) - 10%));
+
+  --text-color-primary: hsl(var(--text-color-primary-HS), var(--text-color-primary-L));
+  --text-color-primary-darkest: hsl(var(--text-color-primary-HS), calc(var(--text-color-primary-L) + 10%));
+  --text-color-primary-darker: hsl(var(--text-color-primary-HS), calc(var(--text-color-primary-L) + 5%));
+  --text-color-primary-hover: hsl(var(--text-color-primary-HS), calc(var(--text-color-primary-L) - 5%));
+}
+
+
