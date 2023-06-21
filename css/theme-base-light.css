@@ -188,6 +188,10 @@ input:not([type]),input[type="text"],input[type="email"],input[type="password"],
   background: var(--background-color-hover);
 }
 
+.jush-sql_code{
+	font-family: monospace !important;
+}
+
 tr {
   border-bottom: 1px solid var(--background-color-darkest);
 }
